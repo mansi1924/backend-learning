@@ -21,7 +21,7 @@
     <button class="btn5">button 5</button>
 
 
-    <div class="input-container">
+    <!-- <div class="input-container">
         <div class="input">
             <input type="text" placeholder="Enter your name" id="nameInput" />
         </div>
@@ -46,7 +46,27 @@
             <h5 id="paragarph"></h5>
             <p id="wordCount"></p>
         </div>
+    </div> -->
+
+    <div class="object_input">
+        <input type="text" placeholder="Enter your key" id="keyInput" />
+        <input type="text" placeholder="Enter your value" id="valueInput" />
+
+        <button id="objectButton">Add to Object</button>
+
+         <ul>
+            <li>
+                <select id="sortObject">
+                    <option value="ascending" id="ascending">Ascending</option>
+                    <option value="descending" id="descending">Descending</option>
+                </select>
+            </li>
+        </ul>
+
+        <button id="printButton">Print Object</button>
+
     </div>
+    <h3 id="objectHeading"></h3>
 
     <script src="app.js"></script>
 </body>
