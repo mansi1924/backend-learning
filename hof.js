@@ -247,3 +247,35 @@
 //     document.body.appendChild(dots);
 //     // document.body.style.backgroundColor = colorsCode[Math.floor(Math.random() * colorsCode.length)];
 // };
+
+
+const clickBtn = document.querySelector("#click");
+const nameInput = document.querySelector("#nameInput");
+const timeInput = document.querySelector("#timeInput");
+const stopBtn = document.querySelector("#stop");
+const printName = document.getElementById("printName");
+
+let timer;
+let seconds = 1;
+
+clickBtn.addEventListener("click", function () {
+    const name = nameInput.value;
+
+    timeInput.value = "1 sec";
+
+    timer = setInterval(() => {
+        seconds++;
+        timeInput.value = seconds + " sec";
+    }, 1000);
+});
+
+stopBtn.addEventListener("click", function () {
+    const name = nameInput.value;
+    const time = timeInput.value;
+    clearInterval(timer);
+    printName.innerText = `Name: ${name}, Time: ${time}`;
+
+    nameInput.value = "";
+    timeInput.value = "";
+});
+
