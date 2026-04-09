@@ -52,7 +52,7 @@
 // console.log(d + e); //18
 
 
-// let text = "Javascript is awesome. Javascript is fun.";
+let text = "Javascript is awesome. Javascript is fun.";
 // let result = text.replaceAll("Javascript", "JS").indexOf("awesome") - text.lastIndexOf("is");
 // console.log(result);
 
@@ -62,7 +62,7 @@
 // let c = text.length - text.lastIndexOf(".");
 // console.log(a + b - c)
 
-// let a = text.slice(10, 15);
+let a = text.slice(10, 15); 
 // let b = text.slice(0, 10);
 // console.log(a + b)
 
@@ -353,3 +353,6 @@ objectButton.addEventListener("click", function () {
     // keyInput.focus();
     console.log("nanme")
 });
+
+
+
